@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("SploitWare", "Ocean")
+local Window = Library.CreateLib("SploitWare V0.2.3 || vetefan#3449", "Ocean")
 
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
@@ -10,6 +10,16 @@ local TweenService = game:GetService("TweenService")
 local Highlight = Instance.new("Highlight")
 Highlight.Name = "Highlight"
 local Holding = false
+
+--Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+MainSection:NewLabel("Contact me if any bugs or issues is found :)")
+
+local ChangeSection = Main:NewSection("Changelog V0.2.3:")
+ChangeSection:NewLabel("-Bug Fixes kinda improved")
+
 
 -- aimbot
 local Aimbot = Window:NewTab("Aimbot")
